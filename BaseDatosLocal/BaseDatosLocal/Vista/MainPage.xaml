@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BaseDatosLocal.MainPage">
+
+    <StackLayout>
+
+        <StackLayout>
+            <Label Text="ID"/>
+            <Entry  x:Name="id"/>
+            <Button Text="Buscar"
+                    Clicked="BuscarUno"/>
+        </StackLayout>
+
+
+        <StackLayout>
+            <Label Text="Nombres"/>
+            <Entry Placeholder="Nombres"
+                   x:Name="nombres"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Apellidos"/>
+            <Entry Placeholder="Apellidos"
+                   x:Name="apellidos"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Celular"/>
+            <Entry Placeholder="Celular"
+                   x:Name="celular"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button Text="Insertar"
+                Clicked="Insertar"/>
+
+            <Button Text="Eliminar"
+                Clicked="Eliminar"/>
+
+            <Button Text="Ver todos"
+                Clicked="VerTodos"/>
+
+        </StackLayout>
+    </StackLayout>
+
+   
+
+</ContentPage>
